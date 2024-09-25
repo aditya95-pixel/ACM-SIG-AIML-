@@ -1,10 +1,9 @@
 #basic chatbot on streamlit
 import streamlit as st
 import google.generativeai as genai
-from decouple import config
 
 # Configure the API key for Gemini 1.5 Flash
-GOOGLE_API_KEY = config('GOOGLE_API_KEY')
+GOOGLE_API_KEY = '####'
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Function to generate response using Gemini 1.5 Flash
